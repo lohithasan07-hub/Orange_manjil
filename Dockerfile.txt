@@ -3,42 +3,36 @@ FROM python:3.11-slim
 WORKDIR /app
 COPY . .
 
-# ✅ IMPORTANT: Fix browser path mismatch
-ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
-
+# System dependencies for Playwright
 RUN apt-get update && apt-get install -y \
+    wget \
+    gnupg \
     libnss3 \
     libatk1.0-0 \
     libatk-bridge2.0-0 \
     libcups2 \
     libxkbcommon0 \
     libxcomposite1 \
-    libxdamage1 \
     libxrandr2 \
     libgbm1 \
     libasound2 \
     libpangocairo-1.0-0 \
-    libpango-1.0-0 \
     libgtk-3-0 \
-    libx11-xcb1 \
-    libxcb1 \
-    libxext6 \
+    libxdamage1 \
     libxfixes3 \
-    libxi6 \
-    libglib2.0-0 \
+    libxext6 \
+    libx11-6 \
     libdrm2 \
-    libxrender1 \
-    libfontconfig1 \
-    libfreetype6 \
-    libjpeg62-turbo \
-    libpng16-16 \
-    ca-certificates \
+    libxcb1 \
+    libxshmfence1 \
+    libglu1-mesa \
     fonts-liberation \
     && rm -rf /var/lib/apt/lists/*
 
+# Install python deps
 RUN pip install --no-cache-dir -r requirements.txt
 
-# ✅ Install browser in SAME path Playwright will use
-RUN playwright install --with-deps chromium
+# Install playwright browsers
+RUN playwright install chromium
 
-CMD ["python", "main.py"]
+CMD ["python", "your_script.py"]
