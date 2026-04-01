@@ -25,9 +25,6 @@ GROUP_CHAT_ID = "-1003367232797"
 PANEL_USER = "atikk13373@gmail.com"
 PANEL_PASS = "sahinK11"
 
-# ===============================================
-
-
 LOGIN_URL = "https://www.orangecarrier.com/login"
 LOGOUT_URL = "https://www.orangecarrier.com/logout"
 AUDIO_BASE_URL = "https://www.orangecarrier.com/live/calls/sound"
