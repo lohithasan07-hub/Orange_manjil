@@ -19,7 +19,7 @@ task_queue = Queue()
 
 # ================ CONFIGURATION ================
 BOT_TOKEN = "8541688684:AAE_oyIOUd28-UgVnAfPqXsxtKW4rvLkLa4"
-ADMIN_ID = 7241942959
+ADMIN_ID = 1725468809
 GROUP_CHAT_ID = "-5141891230"
 
 PANEL_USER = "atikk13373@gmail.com"
