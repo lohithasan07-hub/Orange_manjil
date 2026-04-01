@@ -29,7 +29,7 @@ LOGIN_URL = "https://www.orangecarrier.com/login"
 LOGOUT_URL = "https://www.orangecarrier.com/logout"
 AUDIO_BASE_URL = "https://www.orangecarrier.com/live/calls/sound"
 
-MY_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+MY_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.86 Safari/537.36"
 
 LOHIT_BRANDING = "◈ <b><i>AHNAF TAHMID LOHIT</i></b> ◈"
 
