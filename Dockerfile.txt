@@ -3,6 +3,9 @@ FROM python:3.11-slim
 WORKDIR /app
 COPY . .
 
+# ✅ IMPORTANT: Fix browser path mismatch
+ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
+
 RUN apt-get update && apt-get install -y \
     libnss3 \
     libatk1.0-0 \
@@ -35,7 +38,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-# ✅ FIXED LINE
+# ✅ Install browser in SAME path Playwright will use
 RUN playwright install --with-deps chromium
 
 CMD ["python", "main.py"]
