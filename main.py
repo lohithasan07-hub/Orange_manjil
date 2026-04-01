@@ -18,12 +18,12 @@ from queue import Queue
 task_queue = Queue()
 
 # ================ CONFIGURATION ================
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-ADMIN_ID = int(os.getenv("ADMIN_ID"))
-GROUP_CHAT_ID = os.getenv("GROUP_CHAT_ID")
+BOT_TOKEN = "8541688684:AAE_oyIOUd28-UgVnAfPqXsxtKW4rvLkLa4"
+ADMIN_ID = 7241942959
+GROUP_CHAT_ID = "-5141891230"
 
-PANEL_USER = os.getenv("PANEL_USER")
-PANEL_PASS = os.getenv("PANEL_PASS")
+PANEL_USER = "atikk13373@gmail.com"
+PANEL_PASS = "sahinK11"
 
 LOGIN_URL = "https://www.orangecarrier.com/login"
 LOGOUT_URL = "https://www.orangecarrier.com/logout"
