@@ -20,16 +20,19 @@ task_queue = Queue()
 # ================ CONFIGURATION ================
 BOT_TOKEN = "8541688684:AAE_oyIOUd28-UgVnAfPqXsxtKW4rvLkLa4"
 ADMIN_ID = 1725468809
-GROUP_CHAT_ID = "-5141891230"
+GROUP_CHAT_ID = "-1003367232797"
 
 PANEL_USER = "atikk13373@gmail.com"
 PANEL_PASS = "sahinK11"
+
+# ===============================================
+
 
 LOGIN_URL = "https://www.orangecarrier.com/login"
 LOGOUT_URL = "https://www.orangecarrier.com/logout"
 AUDIO_BASE_URL = "https://www.orangecarrier.com/live/calls/sound"
 
-MY_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.86 Safari/537.36"
+MY_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
 
 LOHIT_BRANDING = "◈ <b><i>AHNAF TAHMID LOHIT</i></b> ◈"
 
